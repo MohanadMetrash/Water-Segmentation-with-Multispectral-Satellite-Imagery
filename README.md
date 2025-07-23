@@ -8,7 +8,6 @@ The entire project is implemented within a single Google Colab notebook, designe
 - [Visual Results](#visual-results)
 - [Key Features](#key-features)
 - [Model Performance](#model-performance)
-- [How to Run](#how-to-run)
 - [Project Workflow](#project-workflow)
 - [Technical Details](#technical-details)
 - [Dependencies](#dependencies)
