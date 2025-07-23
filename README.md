@@ -46,21 +46,6 @@ Models were evaluated on the validation set using the **Intersection over Union 
 
 While the initial transfer learning approach offered a marginal improvement, **fine-tuning the ResNet50 encoder provided a significant 2.6% boost in IoU**, demonstrating its ability to adapt learned features to the specific domain of multispectral satellite imagery.
 
-## How to Run
-
-This project is designed to be run in a **Google Colab** environment.
-
-1.  **Data Setup in Google Drive:**
-    -   Download the dataset `Water Segmentation.zip`.
-    -   Upload it to your Google Drive at the following path: `MyDrive/Cellula Technology/Water Segmentation/Water Segmentation.zip`.
-    -   The notebook is configured to automatically mount your drive and extract the dataset to the correct location.
-
-2.  **Open in Google Colab:**
-    -   Upload the `water_segmentation_using_multispectral_and_optical_data.ipynb` file to your Google Colab instance.
-    -   Ensure the runtime is set to use a **GPU accelerator** for faster training (`Runtime` -> `Change runtime type` -> `GPU`).
-
-3.  **Execute the Notebook:**
-    -   Run the cells in order. The notebook will automatically install dependencies, load and clean the data, and proceed with model training and evaluation.
 
 ## Project Workflow
 
@@ -88,15 +73,4 @@ The successful fine-tuning strategy involves two stages:
 1.  **Feature Extraction:** The entire ResNet50 encoder is frozen, and only the randomly initialized decoder is trained. This allows the decoder to learn how to interpret the powerful pre-trained features without corrupting them with large, random gradients.
 2.  **Fine-Tuning:** The encoder is unfrozen, but only the later, more specialized layers (e.g., `conv5_block`) are made trainable. The model is then re-compiled with a very low learning rate (`1e-5`) to make small, careful adjustments to the pre-trained weights, adapting them to the new domain.
 
-## Dependencies
-The notebook will install these automatically. A `requirements.txt` file would look like this:
-
-```
-tensorflow
-tensorflow-io
-tifffile
-scikit-learn
-matplotlib
-numpy
-Pillow
-```
+#
