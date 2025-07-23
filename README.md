@@ -14,12 +14,12 @@ The entire project is implemented within a single Google Colab notebook, designe
 
 ## Visual Results
 
-The fine-tuned model demonstrates superior performance, capturing finer details and producing cleaner segmentation masks compared to the baseline U-Net. The columns show the original input, the ground truth mask, the model's predicted mask, and a visual overlay of the prediction on the input.
+The fine-tuned model demonstrates superior performance compared to the baseline U-Net. The images below show a side-by-side comparison of the results from both models. Each image contains four panels: **Input Image**, **Ground Truth Mask**, **Predicted Mask**, and **Prediction Overlay**.
 
-| Model | Input Image | Ground Truth | Prediction | Overlay |
-| :---: | :---: | :---: | :---: | :---: |
-| **U-Net (Baseline)** | <img src="assets/unet_input.png" width="150"> | <img src="assets/unet_ground_truth.png" width="150"> | <img src="assets/unet_prediction.png" width="150"> | <img src="assets/unet_overlay.png" width="150"> |
-| **Fine-Tuned ResNet50** | <img src="assets/finetuned_input.png" width="150"> | <img src="assets/finetuned_ground_truth.png" width="150"> | <img src="assets/finetuned_prediction.png" width="150"> | <img src="assets/finetuned_overlay.png" width="150"> |
+| Model | Full Result Visualization |
+| :--- | :--- |
+| **U-Net (Baseline)** | ![U-Net Result](results/1.png) |
+| **Fine-Tuned ResNet50** | ![Fine-Tuned ResNet50 Result](results/2.png) |
 
 ## Key Features
 
