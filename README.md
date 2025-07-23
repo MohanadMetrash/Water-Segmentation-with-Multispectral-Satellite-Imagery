@@ -18,8 +18,8 @@ The fine-tuned model demonstrates superior performance compared to the baseline 
 
 | Model | Full Result Visualization |
 | :--- | :--- |
-| **U-Net (Baseline)** | ![U-Net Result](results/1.png) |
-| **Fine-Tuned ResNet50** | ![Fine-Tuned ResNet50 Result](results/2.png) |
+| **U-Net (Baseline)** | ![U-Net Result](results/2.png) |
+| **Fine-Tuned ResNet50** | ![Fine-Tuned ResNet50 Result](results/1.png) |
 
 ## Key Features
 
